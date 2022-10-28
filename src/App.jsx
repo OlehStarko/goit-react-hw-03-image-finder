@@ -24,7 +24,6 @@ const App = () => {
     if (!searchQuery) return;
 
     getImages();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchQuery]);
 
   const onChangeQuery = query => {
@@ -58,10 +57,10 @@ const App = () => {
     }
   };
 
-  function handleGalleryItem(fullImageUrl) {
+  const handleGalleryItem = fullImageUrl => {
     setlargeImage(fullImageUrl);
     setModal(true);
-  }
+  };
 
   const toggleModal = () => {
     setModal(prevModal => !prevModal);
