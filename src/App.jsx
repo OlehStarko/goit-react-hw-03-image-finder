@@ -95,7 +95,7 @@ class App extends Component {
 
         {images.length < 1 && (
           <Message>
-            <h2>The gallery is empty.</h2>
+            <h2>Sorry. There are no images.</h2>
           </Message>
         )}
 
