@@ -1,6 +1,7 @@
+import css from '../css/styles.module.css';
 const Loader = () => (
   <div>
-    <p>Loader</p>
+    <span className={css.loader}></span>
   </div>
 );
 
